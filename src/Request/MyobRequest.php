@@ -1,6 +1,6 @@
 <?php
 
-namespace Creativecurtis\Laramyob\Request;
+namespace Mattjamesvogt\Laramyob\Request;
 
 use GuzzleHttp\Client;
 

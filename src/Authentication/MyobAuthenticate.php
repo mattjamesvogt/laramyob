@@ -32,7 +32,6 @@ class MyobAuthenticate {
      */
     public function getCode() 
     {
-		dd(urlencode($this->redirect_uri));
         return redirect('https://secure.myob.com/oauth2/account/authorize?client_id='.$this->client_id.'&redirect_uri='.urlencode($this->redirect_uri).'&response_type=code&scope='.$this->scope_type);
     }
 
@@ -51,7 +50,7 @@ class MyobAuthenticate {
                 'Content-Type' => 'application/x-www-form-urlencoded',
             ],
             'form_params' => [
-                'code'          => $request ? $request['code'] : null,
+                'code'          => 'XLlo%21IAAAACeExl0QH4u29jbo41GMnpJXXkcpTdlHdeV0OcGXvsguAQEAAAHHa2UO0kV4bzxcVc3bWbj2BWpllb6LMEXdFflTbNWRpPl-v1-GYdxhP_WfvdykVxTYscsu_PZJpk2Eg0ZZDRVD5zyy56EjAi15n_MmPRLTZ214B4-i91T83mr0SlmKWHqTNCyYVwkgWTodn28XSynW0CjxD7JNJ_x-d0H2cswT6dSbb4JMMuVzMgS9IfGVP2gj2EBWr0pcvflwj69FwlpaeLzmFs27PXfYsXrfXW1vdFQRBVCO-Uc4hBpY2kjKT2bxTE-Sx6eGI7OLWNEJ4rOOzrrF0QU1vRN_aWwuy10XdSkMFQnOmimKCQH1qLEzw1mY6prH3ZuPqBrnq4lB5Tvv', //$request ? $request['code'] : null,
                 'grant_type'    => $grant_type, 
                 'refresh_token' => $refresh_token,
                 'redirect_uri'  => $this->redirect_uri, 

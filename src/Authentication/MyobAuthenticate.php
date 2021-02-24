@@ -32,6 +32,7 @@ class MyobAuthenticate {
      */
     public function getCode() 
     {
+		dd(urlencode($this->redirect_uri));
         return redirect('https://secure.myob.com/oauth2/account/authorize?client_id='.$this->client_id.'&redirect_uri='.urlencode($this->redirect_uri).'&response_type=code&scope='.$this->scope_type);
     }
 

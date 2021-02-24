@@ -55,7 +55,7 @@ class MyobRequest {
         $params = $data['form_params'] ?? json_encode($data);
         return $this->getHttpClient()->post($endpoint.'?returnBody=true', [
             'headers' => empty($this->httpConfig) ? $data['headers'] : $this->httpConfig,
-            'form_params'    => $params,
+            'body'    => $params,
         ]);
     }
 

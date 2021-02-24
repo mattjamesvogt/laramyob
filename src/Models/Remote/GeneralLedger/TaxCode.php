@@ -1,8 +1,8 @@
 <?php
 
-namespace Creativecurtis\Laramyob\Models\Remote\GeneralLedger;
+namespace Mattjamesvogt\Laramyob\Models\Remote\GeneralLedger;
 
-use Creativecurtis\Laramyob\Models\BaseModel as Model;
+use Mattjamesvogt\Laramyob\Models\BaseModel as Model;
 
 class TaxCode extends Model
 {

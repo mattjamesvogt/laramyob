@@ -1,11 +1,11 @@
 <?php
 
-namespace Creativecurtis\Laramyob;
+namespace Mattjamesvogt\Laramyob;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Creativecurtis\Laramyob\Skeleton\SkeletonClass
+ * @see \Mattjamesvogt\Laramyob\Skeleton\SkeletonClass
  */
 class LaramyobFacade extends Facade
 {

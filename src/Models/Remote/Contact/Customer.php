@@ -1,8 +1,8 @@
 <?php
 
-namespace Creativecurtis\Laramyob\Models\Remote\Contact;
+namespace Mattjamesvogt\Laramyob\Models\Remote\Contact;
 
-use Creativecurtis\Laramyob\Models\BaseModel as Model;
+use Mattjamesvogt\Laramyob\Models\BaseModel as Model;
 
 class Customer extends Model
 {

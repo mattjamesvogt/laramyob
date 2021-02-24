@@ -1,9 +1,9 @@
 <?php
 
-namespace Creativecurtis\Laramyob;
+namespace Mattjamesvogt\Laramyob;
 
 use Illuminate\Support\ServiceProvider;
-use Creativecurtis\Laramyob\Models\Remote\Contact\Customer;
+use Mattjamesvogt\Laramyob\Models\Remote\Contact\Customer;
 
 class LaramyobServiceProvider extends ServiceProvider
 {

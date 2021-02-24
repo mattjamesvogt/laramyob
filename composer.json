@@ -1,20 +1,13 @@
 {
-    "name": "creativecurtis/laramyob",
+    "name": "mattjamesvogt/laramyob",
     "description": "A Laravel wrapper for MYOB Account Right v2",
     "keywords": [
-        "creativecurtis",
-        "laramyob"
+        "nims",
+        "lramyob"
     ],
-    "homepage": "https://github.com/creativecurtis/laramyob",
+    "homepage": "https://github.com/mattjamesvogt/laramyob",
     "license": "MIT",
     "type": "library",
-    "authors": [
-        {
-            "name": "Luke Curtis",
-            "email": "lukesimoncurtis@gmail.com",
-            "role": "Developer"
-        }
-    ],
     "require": {
         "php": "^8.0",
         "illuminate/support": "5.7.*",
@@ -28,12 +21,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Creativecurtis\\Laramyob\\": "src"
+            "Mattjamesvogt\\Laramyob\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Creativecurtis\\Laramyob\\Tests\\": "tests"
+            "Mattjamesvogt\\Laramyob\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -47,10 +40,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Creativecurtis\\Laramyob\\LaramyobServiceProvider"
+                "Mattjamesvogt\\Laramyob\\LaramyobServiceProvider"
             ],
             "aliases": {
-                "Laramyob": "Creativecurtis\\Laramyob\\LaramyobFacade"
+                "Laramyob": "Mattjamesvogt\\Laramyob\\LaramyobFacade"
             }
         }
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Creativecurtis\Laramyob\Tests;
+namespace Mattjamesvogt\Laramyob\Tests;
 
 use PHPUnit\Framework\TestCase;
 

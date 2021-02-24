@@ -1,13 +1,13 @@
 <?php
 
-namespace Creativecurtis\Laramyob;
+namespace Mattjamesvogt\Laramyob;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\App;
-use Creativecurtis\Laramyob\Models\Remote\Myob;
-use Creativecurtis\Laramyob\Request\MyobRequest;
-use Creativecurtis\Laramyob\Authentication\MyobAuthenticate;
-use Creativecurtis\Laramyob\Models\Configuration\MyobConfiguration;
+use Mattjamesvogt\Laramyob\Models\Remote\Myob;
+use Mattjamesvogt\Laramyob\Request\MyobRequest;
+use Mattjamesvogt\Laramyob\Authentication\MyobAuthenticate;
+use Mattjamesvogt\Laramyob\Models\Configuration\MyobConfiguration;
 
 class Laramyob
 {

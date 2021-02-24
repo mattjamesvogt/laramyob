@@ -1,12 +1,12 @@
 <?php
 
-namespace Creativecurtis\Laramyob\Authentication;
+namespace Mattjamesvogt\Laramyob\Authentication;
 
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Schema;
-use Creativecurtis\Laramyob\Request\MyobRequest;
-use Creativecurtis\Laramyob\Models\Configuration\MyobConfiguration;
+use Mattjamesvogt\Laramyob\Request\MyobRequest;
+use Mattjamesvogt\Laramyob\Models\Configuration\MyobConfiguration;
 
 class MyobAuthenticate {
 

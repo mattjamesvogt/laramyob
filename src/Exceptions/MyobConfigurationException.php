@@ -1,6 +1,6 @@
 <?php
 
-namespace Creativecurtis\Laramyob\Exceptions;
+namespace Mattjamesvogt\Laramyob\Exceptions;
 
 use Exception;
 

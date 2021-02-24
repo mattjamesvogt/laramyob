@@ -1,6 +1,6 @@
 <?php
 
-namespace Creativecurtis\Laramyob\Models\Configuration;
+namespace Mattjamesvogt\Laramyob\Models\Configuration;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -1,9 +1,9 @@
 # Laramyob - MYOB in Laravel, made easy.
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/creativecurtis/laramyob.svg?style=flat-square)](https://packagist.org/packages/creativecurtis/laramyob)
-[![Build Status](https://img.shields.io/travis/creativecurtis/laramyob/master.svg?style=flat-square)](https://travis-ci.org/creativecurtis/laramyob)
-[![Quality Score](https://img.shields.io/scrutinizer/g/creativecurtis/laramyob.svg?style=flat-square)](https://scrutinizer-ci.com/g/creativecurtis/laramyob)
-[![Total Downloads](https://img.shields.io/packagist/dt/creativecurtis/laramyob.svg?style=flat-square)](https://packagist.org/packages/creativecurtis/laramyob)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/Mattjamesvogt/laramyob.svg?style=flat-square)](https://packagist.org/packages/Mattjamesvogt/laramyob)
+[![Build Status](https://img.shields.io/travis/Mattjamesvogt/laramyob/master.svg?style=flat-square)](https://travis-ci.org/Mattjamesvogt/laramyob)
+[![Quality Score](https://img.shields.io/scrutinizer/g/Mattjamesvogt/laramyob.svg?style=flat-square)](https://scrutinizer-ci.com/g/Mattjamesvogt/laramyob)
+[![Total Downloads](https://img.shields.io/packagist/dt/Mattjamesvogt/laramyob.svg?style=flat-square)](https://packagist.org/packages/Mattjamesvogt/laramyob)
 
 A handy Laravel wrapper around MYOB AccountRight v2. This is still in alpha stage and will include breaking changes regularily. Full Readme in progress.
 
@@ -12,7 +12,7 @@ A handy Laravel wrapper around MYOB AccountRight v2. This is still in alpha stag
 You can install the package via composer:
 
 ```bash
-composer require creativecurtis/laramyob
+composer require Mattjamesvogt/laramyob
 ```
 
 ## Setup
@@ -28,16 +28,16 @@ MYOB_SCOPE=CompanyFile
 
 Publish the preset configuration to store your MYOB authentication details
 ```bash
-php artisan vendor:publish --provider="Creativecurtis\Laramyob\LaramyobServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="Mattjamesvogt\Laramyob\LaramyobServiceProvider" --tag="migrations"
 php artisan migrate
 ```
 
 You'll now need to authenticate with something like the following:
 
 ``` php
-use Creativecurtis\Laramyob\Laramyob;
-use Creativecurtis\Laramyob\Models\Remote\CompanyFile;
-use Creativecurtis\Laramyob\Models\Remote\Contact\Customer;
+use Mattjamesvogt\Laramyob\Laramyob;
+use Mattjamesvogt\Laramyob\Models\Remote\CompanyFile;
+use Mattjamesvogt\Laramyob\Models\Remote\Contact\Customer;
 
 $laramyob = new Laramyob;
 //Redirect your user to MYOB to authenticate account right v2
@@ -92,7 +92,7 @@ Once you're ready to post you can do the following, to, for example, save a Cust
 $taxCode = $this->laramyob->of(TaxCode::class)->whereCode('GST')->first();
 
 $customer = (new Customer)->create([
-    'CompanyName'    => 'Creativecurtis',
+    'CompanyName'    => 'Mattjamesvogt',
     'LastName'       => 'curtis',
     'FirstName'      => 'luke',
     'IsIndividual'   => false,

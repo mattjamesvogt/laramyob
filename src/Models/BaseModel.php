@@ -1,12 +1,12 @@
 <?php
 
-namespace Creativecurtis\Laramyob\Models;
+namespace Mattjamesvogt\Laramyob\Models;
 
 use ArrayAccess;
 use JsonSerializable;
-use Creativecurtis\Laramyob\Request\MyobRequest;
-use Creativecurtis\Laramyob\Exceptions\MyobConfigurationException;
-use Creativecurtis\Laramyob\Models\Configuration\MyobConfiguration;
+use Mattjamesvogt\Laramyob\Request\MyobRequest;
+use Mattjamesvogt\Laramyob\Exceptions\MyobConfigurationException;
+use Mattjamesvogt\Laramyob\Models\Configuration\MyobConfiguration;
 
 abstract class BaseModel implements JsonSerializable, ArrayAccess {
 

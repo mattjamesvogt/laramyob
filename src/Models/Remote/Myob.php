@@ -1,8 +1,8 @@
 <?php
 
-namespace Creativecurtis\Laramyob\Models\Remote;
+namespace Mattjamesvogt\Laramyob\Models\Remote;
 
-use Creativecurtis\Laramyob\Models\BaseModel as Model;
+use Mattjamesvogt\Laramyob\Models\BaseModel as Model;
 
 class Myob extends Model
 {

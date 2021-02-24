@@ -54,11 +54,11 @@ class MyobRequest {
         //And we also have to tell MYOB to return the created object
         $params = $data['form_params'] ?? json_encode($data);
 
-		var_dump($this->httpConfig);
+		// var_dump($this->httpConfig);
 
-		var_dump($data['headers']);
+		// var_dump($data['headers']);
 		
-		dd($params);
+		// dd($params);
 
         return $this->getHttpClient()->post($endpoint.'?returnBody=true', [
             'headers' => empty($this->httpConfig) ? $data['headers'] : $this->httpConfig,
